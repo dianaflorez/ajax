@@ -2,10 +2,12 @@
   "name": "ajax",
   "version": "1.0.0",
   "description": "ej1",
-  "scripts": {},
+  "scripts": {
+    "start":"lite-server"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "lite-server": "^2.2.2"
   }
-}
+} 
