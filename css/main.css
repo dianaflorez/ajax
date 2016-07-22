@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+}
+
+header{
+    background: dodgerblue;
+    color: white;
+    padding: 15px;
+    font-size: 2em;
+}
+
+.container{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+aside{
+    overflow: auto;
+    background: #333;
+    min-width: 280px;
+}
+
+aside ul{
+    list-style-type: none;
+}
+
+aside li{
+    padding: 12px;
+    border-bottom: 1px solid #555;
+    color: #eee;
+}
+
+aside li:hover{
+    background: #555;
+}
+
+aside .selected{
+    background: cadetblue;
+    color: white;
+}
+
+aside .selected:hover{
+    background: lightgreen;
+}
+
+section{
+    padding: 20px;
+}
