@@ -25,6 +25,16 @@ function loadUsr() {
 function processUsr() {
     if(requestUsr.status == 200 && requestUsr.readyState ==4){
         var data = requestUsr.responseText;
-        data = JSON.parse(data)
+        data = JSON.parse(data);
+        var usr = document.getElementById("usr");
+        usr.innerHTML = "";    
+        for(i=0;i<data.length;i++){
+            var u = data[i];
+            usr.innerHTML += "<h1>"+u.nombre+"</h1>"
+                    +"<p>"+u.celular+"</p>"
+                    +"<p>"+u.correo+"</p>"
+                    +"<hr>";
+
+        }
     }
 }
